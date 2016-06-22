@@ -2,6 +2,8 @@
 React Native 和 React 开发对比
 ----
 
+Read on [Gitbook](https://jiyinyiyong.gitbooks.io/react-native-reference/content/)
+
 涉及到:
 
 * 界面布局
