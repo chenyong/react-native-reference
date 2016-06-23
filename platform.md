@@ -9,14 +9,17 @@
 
 ### Sticky Header
 
-仅在 iOS 中实现.
+仅在 iOS 中实现. Android 通过第三方的组件实现.
 
 ### scroll position
 
 ### 文本居中
 
+纯文本内容 lineHeight 在 iOS 不生效, padding 在 Android 不生效, 尽量用 flexbox center.
+
 ### Status bar
 
+status bar, iOS 是隐形的, Android 是不计算在应用内的.
 iOS 中滚动界面区域包含 status bar, Android 当中不包括.
 当前的做法是手工在 iOS 里设置了 `paddingTop` 来低消影响.
 
@@ -28,3 +31,7 @@ Android 当中是 `ProgressBarAndroid`, iOS 当中是 `ActivityIndicatorIOS`,
 界面和参数不一致, 但是可以引用社区的组件写法:
 
 https://github.com/FaridSafi/react-native-gifted-spinner
+
+### Android 输入框兼容性问题
+
+文本框在 Android 当中需要加上 `padding:0` 否则看不到文字部分.

@@ -10,7 +10,7 @@ iPhone 真机上调试 React Native 会有比较啰嗦的问题
 
 * 真机调试修改 IP
 
-`RCTWebSocketExecutor.m` 和 `AppDelegate.m` 的 `localhost` 为 IP.
+iOS 当中, `RCTWebSocketExecutor.m` 和 `AppDelegate.m` 的 `localhost` 为 IP.
 前者修改 remote JavaScript debugging, 后者修改静态资源
 
 * 不存在 `zIndex`, 使用 `transform` 处理浮层(并不完整的方案)
@@ -21,17 +21,14 @@ transform: [
 ],
 ```
 
+还是建议通过 virtual DOM 结构入手解决问题.
+
 * offline bundle 报错 code sign 问题
 
-需要开发者账号, 并且更改包名与团队对应 `me.ele.XXX`
+iOS 存在限制, 不像是 Android 能随意安装应用. 除了开发环境, 打包的应用需要开发者账号才能安装.
+需要购买开发者账号或者加入付费的团队, 并且更改包名与团队对应 `me.ele.XXX`, 然后才能安装.
 
-* 平台差异
-
-status bar, iOS 是隐形的, Android 是不计算在应用内的.
-
-纯文本内容 lineHeight 在 iOS 不生效, padding 在 Android 不生效, 尽量用 flexbox center.
-
-文本框在 Android 当中需要加上 `padding:0` 否则看不到文字部分.
+开发者账号通过证书验证, 具体证书申请和安装步骤 http://www.jianshu.com/p/9d9e3699515e
 
 * Android trace
 
@@ -40,20 +37,8 @@ status bar, iOS 是隐形的, Android 是不计算在应用内的.
 
 * `_RCTSetLogFunction` 报错
 
-在 Build Setting -> Linking ->  Dead Code Stripping 中设置为 No 就可以了。
+在 `Build Setting -> Linking ->  Dead Code Stripping` 中设置为 No 就可以了。
 
 * Android 提示 `locale[0]` 报错, 生产环境不要用 hmr 之类的
 
 可能在 Dev Settings 里误选了开发环境, 改过了就好了.
-
-* log
-
-```bash
-brew install libimobiledevice
-idevice_id --list // list available device UDIDs
-idevicesyslog -u <device udid>
-```
-
-```bash
-adb logcat -T 10
-```

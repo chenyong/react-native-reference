@@ -100,6 +100,8 @@ https://github.com/Microsoft/react-native-code-push#debugging--troubleshooting
 
 Android 查看 Logs: `adb logcat`.
 iOS 查看 Logs, 模拟器可以在 Safari 的 Develop 菜单找到入口.
+打印的是全部 log, CodePush 相关的可以通过 `[CodePush]` 标识找到.
+
 从 `0.12.0-beta` 开始, 可以通过 debug 命令查看 log:
 
 ```bash

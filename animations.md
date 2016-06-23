@@ -101,7 +101,7 @@ componentDidMount() {
 
 具体需要参考教程:
 
-http://browniefed.com/react-native-animation-book/
-http://www.alloyteam.com/2016/01/reactnative-animated/
-http://browniefed.com/blog/react-native-animated-api-basic-example/
-http://blog.huynh.io/2015/08/06/react-native-animations/
+* http://browniefed.com/react-native-animation-book/
+* http://www.alloyteam.com/2016/01/reactnative-animated/
+* http://browniefed.com/blog/react-native-animated-api-basic-example/
+* http://blog.huynh.io/2015/08/06/react-native-animations/
