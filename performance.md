@@ -8,7 +8,11 @@
 
 ### 线程
 
-UI 线程, JavaScript 线程.
+分为三种 UI Thread, JS Thread, Native Modules Thread.
+
+由于 js 性能差距, 一般性能问题都在 js 中查找. 调试的方案在文档中有写:
+
+https://facebook.github.io/react-native/docs/android-ui-performance.html
 
 ### ListView
 
@@ -43,3 +47,5 @@ https://github.com/IskenHuang/react-native-scrollview-lazyload
 不过没有比较多经验从 Android 的图表中大看不到什么, 一般性能问题应该在 JavaScript 里.
 
 https://facebook.github.io/react-native/docs/android-ui-performance.html
+
+调试菜单中开启 `Perf Monitor` 能显示帧率.

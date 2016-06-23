@@ -22,5 +22,3 @@
 
 通过 Xcode 操作 `Product > Archive` 可以生成一个 `.xarchive` 文件.
 拖动该文件到 iTunes 当中, 然后可以通过 iTunes 的图形界面安装应用.
-
-![](https://schoolipads.files.wordpress.com/2013/03/wpid-photo-mar-26-2013-244-pm1.jpg)

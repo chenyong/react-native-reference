@@ -14,3 +14,9 @@ https://github.com/aksonov/react-native-router-flux/
 https://github.com/FaridSafi/react-native-gifted-listview
 
 React Native 在 Android 没有实现 Sticky Header, 这个组件实现了.
+
+* `react-native-gifted-spinner`
+
+https://github.com/FaridSafi/react-native-gifted-spinner
+
+通用组件, 加载动画在两个平台用法不一致, 这是折中的版本.

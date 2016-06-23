@@ -15,7 +15,7 @@
 
 ### 文本居中
 
-纯文本内容 lineHeight 在 iOS 不生效, padding 在 Android 不生效, 尽量用 flexbox center.
+纯文本内容 `lineHeight` 在 iOS 不生效, padding 在 Android 不正常, 尽量用 Flexbox center.
 
 ### Status bar
 
@@ -34,4 +34,4 @@ https://github.com/FaridSafi/react-native-gifted-spinner
 
 ### Android 输入框兼容性问题
 
-文本框在 Android 当中需要加上 `padding:0` 否则看不到文字部分.
+文本框在 Android 当中需要加上 `padding:0` 否则看不到文字部分, 感觉是个 bug.
