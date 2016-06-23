@@ -37,8 +37,6 @@ transform: [
 iOS 存在限制, 不像是 Android 能随意安装应用. 除了开发环境, 打包的应用需要开发者账号才能安装.
 需要购买开发者账号或者加入付费的团队, 并且更改包名与团队对应 `me.ele.XXX`, 然后才能安装.
 
-开发者账号通过证书验证, 具体证书申请和安装步骤 http://www.jianshu.com/p/9d9e3699515e
-
 ### Android trace
 
 `systracy.py` 生成的 HTML 文件直接打开会报错, 要用 `chrome://tracing/` 去加载.

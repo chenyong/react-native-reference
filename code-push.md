@@ -90,9 +90,7 @@ js 代码对 Native 版本可能存在依赖. 所以发布时需要和 binary �
 * http://bbs.reactnative.cn/topic/725/code-push-热更新使用详细说明和教程
 * https://senpng.github.io/2016/03/23/code-push/
 
-### 注意
-
-* log
+### 关于 log
 
 CodePush 运行状态需要从 Logs 中获取, iOS 需要安装文档提示开启 Logs:
 
@@ -117,7 +115,7 @@ idevice_id --list // list available device UDIDs
 idevicesyslog -u <device udid>
 ```
 
-* 求助
+### 求助
 
 官方提供的求助渠道, 包括聊天室(注意时差...)和 GitHub:
 

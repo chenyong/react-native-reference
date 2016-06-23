@@ -4,6 +4,7 @@
 * [开发](development.md)
 * [布局方案异同](layout.md)
 * [数据流](data-flow.md)
+* [事件处理](events.md)
 * [动画](animations.md)
 * [平台差异](platform.md)
 * [常见问题](traps.md)
