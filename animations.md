@@ -4,6 +4,8 @@
 
 官方提供 `Animated` 和 `LayoutAnimation`, 主要使用 `Animated` 来编写动画.
 
+### `Animated`
+
 一个例子比如, 通过 `Animated.Value` 初始化一个动画的对象,
 通过 `Animated.timing()` 开始操作在对象上做插值,
 然后 `Animated.View` 内部使用这个对象(...内部处理了组件的重绘):
@@ -105,3 +107,11 @@ componentDidMount() {
 * http://www.alloyteam.com/2016/01/reactnative-animated/
 * http://browniefed.com/blog/react-native-animated-api-basic-example/
 * http://blog.huynh.io/2015/08/06/react-native-animations/
+
+### `LayoutAnimation`
+
+大致上是在 iOS 平台自动对 `setState` 的性能进行处理, 直接生成渐变.
+
+(需要补充)
+
+https://medium.com/@Jpoliachik/react-native-s-layoutanimation-is-awesome-4a4d317afd3e

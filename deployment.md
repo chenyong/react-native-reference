@@ -12,7 +12,7 @@
 
 * `release` 环境
 
-通过 XCode 操作 `Product > Scheme > Edit Scheme` 设置 `release`.
+通过 Xcode 操作 `Product > Scheme > Edit Scheme` 设置 `release`.
 修改 `AppDelegate.m` 中的 `jsCodeLocation` 到对应地址(也可能是 CodePush).
 然后点击运行.
 
@@ -20,7 +20,7 @@
 
 (需要补充)
 
-通过 XCode 操作 `Product > Archive` 可以生成一个 `.xarchive` 文件.
+通过 Xcode 操作 `Product > Archive` 可以生成一个 `.xarchive` 文件.
 拖动该文件到 iTunes 当中, 然后可以通过 iTunes 的图形界面安装应用.
 
 ![](https://schoolipads.files.wordpress.com/2013/03/wpid-photo-mar-26-2013-244-pm1.jpg)

@@ -10,7 +10,7 @@ React Native 开发工具中封装了一个 Webpack(推测是修改版) 用于�
 
 手机或者模拟器当中需要安装对应的 App,
 一般通过 `react-native run-ios` 或者 `react-native run-android` 直接完成.
-iOS 真机当中安装需要借助 XCode.
+iOS 真机当中安装需要借助 Xcode.
 
 Android 模拟器可以用 Android Studio. 也有第三方的模拟器比如 GenyMotion, 但是我没有安装成功.
 

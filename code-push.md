@@ -39,7 +39,7 @@ App 的更新通过 deployment key 进行识别, 名字可以随意更改.
 * target binary version
 
 js 代码对 Native 版本可能存在依赖. 所以发布时需要和 binary 代码的版本号指定对应.
-默认会去 XCode 或者 gradle 的配置文件里读取当前版本.
+默认会去 Xcode 或者 gradle 的配置文件里读取当前版本.
 
 * rollout
 

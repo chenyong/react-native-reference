@@ -8,16 +8,22 @@ React Native 和 React 开发对比
 
 ### Usage
 
-这份文档打算梳理一下 React Native 的和学习路径和常见问题, 方便前端开发者快速上手.
+开发 React Native 前期的装备工作较多, 需要查阅官方文档!
+
+https://facebook.github.io/react-native/docs/getting-started.html
+
+这份文档打算梳理一下 React Native 的学习路径和常见问题, 方便前端开发者快速上手.
 
 涉及到:
 
+* [关于前端](abstract.md)
 * [开发](development.md)
 * [布局方案异同](layout.md)
 * [数据流](data-flow.md)
 * [动画](animations.md)
 * [坑](traps.md)
 * [平台](platform.md)
+* [熟悉的组件](explored-components.md)
 * [原生 API](native.md)
 * [性能](performance.md)
 * [部署](deployment.md)

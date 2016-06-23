@@ -8,7 +8,7 @@
 
 ### 线程
 
-UI 线程, JavaScript 线程
+UI 线程, JavaScript 线程.
 
 ### ListView
 
