@@ -23,4 +23,79 @@ http://www.zsoltnagy.eu/introduction-to-immutable-js/
 
 ### Redux
 
-(需要补充)
+Redux 是模仿 Elm 制作的类 Flux 的数据管理工具.
+一些新的术语:
+
+* action
+
+一般是一个对象, 比如 `{type: "DO_SOMETHING"}`.
+有参数时可以写成 `{type: "DO_X", a: 'a', b: 'b'}`.
+
+* store
+
+App 的 Model 更新过程的一种状态, 通过 reducer 来定义:
+
+```js
+const todoApp = combineReducers({
+  todos,
+  visibilityFilter
+})
+
+let store = createStore(todoApp)
+```
+
+* reducer
+
+一个纯函数的 Model 更新的纯函数, 同时也用于定义初始值:
+
+```js
+const visibilityFilter = (state = 'SHOW_ALL', action) => {
+  switch (action.type) {
+    case 'SET_VISIBILITY_FILTER':
+      return action.filter
+    default:
+      return state
+  }
+}
+```
+
+* container
+
+Redux 中顶层的 state 和 action creator 都通过 `connect` 强制绑定到 props 上的.
+
+```js
+
+const mapStateToProps = (state, ownProps) => {
+  return {
+    active: ownProps.filter === state.visibilityFilter
+  }
+}
+
+const mapDispatchToProps = (dispatch, ownProps) => {
+  return {
+    onClick: () => {
+      dispatch(setVisibilityFilter(ownProps.filter))
+    }
+  }
+}
+
+const FilterLink = connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Link)
+
+export default FilterLink
+```
+
+* 例子
+
+前面的术语说明只能给一些大概的说明, 不能解释清楚概念.
+书写的完整的例子比较绕, 需要参照文档的代码:
+
+http://redux.js.org/docs/basics/ExampleTodoList.html
+
+### Redux DevTools
+
+复杂应用可接借助它来调试:
+
+https://github.com/gaearon/redux-devtools

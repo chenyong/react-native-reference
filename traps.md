@@ -18,7 +18,18 @@ http://blog.bigbinary.com/2015/08/25/how-to-test-react-native-app-on-real-iphone
 ### 非 Simulator 调试需要修改 IP
 
 iOS 当中, `RCTWebSocketExecutor.m` 和 `AppDelegate.m` 的 `localhost` 为 IP.
-前者修改 remote JavaScript debugging, 后者修改静态资源
+前者修改 remote JavaScript debugging, 后者修改静态资源.
+
+如果改好 IP 还是报错, 可能是安全机制的影响, 读一下文档, 确认 一下 `plist.info` 里的:
+
+```xml
+<key>NSAppTransportSecurity</key>
+<dict>
+  <!--Include to allow all connections (DANGER)-->
+  <key>NSAllowsArbitraryLoads</key>
+      <true/>
+</dict>
+```
 
 ### 不存在 `zIndex`
 
