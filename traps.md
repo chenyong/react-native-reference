@@ -60,3 +60,8 @@ iOS 存在限制, 不像是 Android 能随意安装应用. 除了开发环境, �
 ### Android 提示 `locale[0]` 报错, 生产环境不要用 hmr 之类的
 
 可能在 Dev Settings 里误选了开发环境, 改过了就好了.
+
+### `react-native run-android` 安装 apk 失败
+
+可能是权限不够, 按 MIUI 上的情况, 用户版本的 MIUI 没有权限.
+需要刷机升级到开发版, 然后在 `安全中心 > 权限管理` 中开启 Root 权限.
